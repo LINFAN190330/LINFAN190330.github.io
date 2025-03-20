@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>虛空漸變</title><meta name="author" content="林凡"><meta name="copyright" content="林凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="虛空漸變">
+<meta property="og:url" content="http://example.com/page/7/index.html">
+<meta property="og:site_name" content="虛空漸變">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2025/03/18/b0451d4701662353.png">
+<meta property="article:author" content="林凡">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2025/03/18/b0451d4701662353.png"><link rel="shortcut icon" href="https://s3.bmp.ovh/imgs/2025/03/18/95bc245ff822f1f2.png"><link rel="canonical" href="http://example.com/page/7/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '複製成功',
+    error: '複製失敗',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '虛空漸變',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://s3.bmp.ovh/imgs/2025/03/18/b0451d4701662353.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">65</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://s3.bmp.ovh/imgs/2025/03/18/34c50011ed4cd2f8.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="https://s3.bmp.ovh/imgs/2025/03/18/95bc245ff822f1f2.png" alt="Logo"><span class="site-name">虛空漸變</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 時間軸</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">虛空漸變</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/LINFAN190330" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:kokuurasen@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2018/01/17/%E9%87%8D%E6%83%B3/" title="重想">重想</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2018-01-17T15:31:00.000Z" title="發表於 2018-01-17 23:31:00">2018-01-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/">遙遠過往</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89/">高三</a></span></div><div class="content">　　動力的來源從此滋生。　　——祇有我曉得那一切對自己是多麼的意義非凡，我抵觸和憎恨萬分的世界因為誰的存在變得煥發色彩。現在剩下一起度過的時間越來越少，倒計時的速度步步緊逼。我唯一想做的就是讓自己變強，為了這樣的世界，為了永遠銘記這段記憶，為了最終告別這個地方，我要讓自己變得足夠強，強到在未來的某日我不會再因為離別而傷心痛苦。那麼唯有繼續學習，刷遍那些阻礙我前進的數學和理綜卷子，我一定要離開這裡，去明天，去未來，為了離別之後的時日里不再陷入无盡的回憶中无法自拔，唯有變強！強到不再依賴別人，強到足以獨立生活，強到能夠正視現實。無論是為了什麼理由，我都會盡一切可能繼續前行。——上天，我不管你要我走上什麼樣的道路，我都必須繼續前進。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2018/01/06/%E5%89%8D%E8%B7%AF/" title="前路">前路</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2018-01-06T14:16:00.000Z" title="發表於 2018-01-06 22:16:00">2018-01-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/">遙遠過往</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89/">高三</a></span></div><div class="content">　　就是活。　　真正地生活。　　童年單純的做夢時代已經過去，我看到生命永無止境的延續。——生而爲人，爲一個富有清晰個體自我的人，眼光永遠是向着前路的。　　數年來耿耿於懷的那些難忘經歷終於成爲過去，成爲我不再想要再度重演的歷史。社會中被主流意識所認同的普通人，在他的學業生涯真正結束的時候，就會將他渺小而單薄的身軀投入茫茫無際的人海之中，爲秩序化的機械運轉的龐大機器而奔勞一生。他會爲財富，爲升遷，爲家庭，爲子嗣，消磨掉他的大半青春和活力，換來的是安逸平淡的晚年。而至此，他一生的軌跡也就圓滿了。　　如何繞開這樣定式的人生軌跡，是我一直以來苦於思索的事。年輕人們總盼望着自己的人生如同電影一般波瀾壯闊，可是絕大多數人在最後往往去向了截然不同的歸宿。　　走上前去，在高中最後的這幾個月裏，讓自己的生命重新地，真正地充盈起來。我看到小學同學，初中同學們有的超越了我走在先列，而大多數停滯不前。階層的劃分在此時已經逐漸現出輪廓，因此我不能輕易滿足現狀。即使高考還剩下150天，我也不會因此而泄氣沮喪。強烈的推動力驅使着我，一定要從這灘爛泥中真正踏出腳來，從茫茫人海中脫身出去。人若是打算在這紛繁世界裏爲自我而活，必須要有足夠的資金和實力，才足以使得他能夠忽略生計之苦而專注於精神需求。而正是在此時眼前的絕佳機會——高考，是必須踏平的第一座山。　　所以，2018年，不決定勝敗。我會盡一切可能爭取高考勝利，若不效，復讀也是無比心甘情願的事情。無論眼前我多麼難以忘卻那些短暫的情感，無論我多麼珍重同窗三年的情誼，無論多麼在意這層薄薄的臉面，這一切也無非是萬千瑣事中的一份子，數年之後皆是過眼雲煙。該捨棄的時候便要做到能夠捨棄。　　　　　　社會是複雜紛繁的，人們不可能永遠停駐在童年。　　但是我要爲自我而生活。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2017/12/23/%E4%B8%80%E7%B7%B4%E4%B9%8B%E5%BE%8C/" title="一練之後">一練之後</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2017-12-23T14:53:00.000Z" title="發表於 2017-12-23 22:53:00">2017-12-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/">遙遠過往</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89/">高三</a></span></div><div class="content">　　我爽了。　　反話。爽到極點。　　考完數學感覺良好，考完物理心情平靜，然而對過答案後如同吃了一萬斤屎。這感覺和曾幾次如出一轍，想逃走，想回家，想夾著尾巴溜人。窗邊陽光燦爛溫暖，暖的連我的意識都要消散了……本應是一練戰鬥結束後小憩一時的好時機，然而我的內心已經變成了一坨冰冷僵硬的老木頭。腦子裡一團亂麻，午覺也睡不進去了。　　爽哉，爽哉，爽歪歪。　　我對於這個發展感到出人意料又在情理之中…突然翻盤反而會讓我覺得受寵若驚呢，呵呵。無數次這麼下來，感覺自己的臉皮越來越厚了，竟然還有心情在數學物理王炸之餘和別人開玩笑。這次一練結束後，放下水筆木然地走出考場，視野之中的萬物倒塌倒也已不見蹤影，取而代之的是簡簡單單的幾個字。　　“媽的，明年加油吧。”　　如今能做的也祇有苦笑了。　　執念是可怕的，尤其是對於過去的，虛無縹緲之物的，或是記憶中的某些事物的執念。它能夠使人時間錯亂，精神恍惚，甚至迷失自我。我依戀於數年前的初中生活，那個與世隔絕，無憂無慮的小天地令我久久無法忘懷。可以如此定論——高中之後我就從未放下過。執著於過往而抵棄現在，生活在當下卻將靈魂駐留於童年，不想離開家，不想離開故鄉，卻又因為故鄉翻天覆地的變化而想要逃離故鄉。洛陽王城大道修橋了，五十五中附近的小路不存在了，奶奶的房子破舊了，身體也變差了，我的成績也不復從前了，一切的一切，全都徹底串聯起來了。　　其實我最不應該喊叫苦喊累，因為從兩年前開始，我的種種怯懦行為都已經為現在的境況埋下了種子，祇不過現在正是收穫的時候罷了。別人在學習的時候，我在家裡躺著；別人在奮進的時候，我在和家人撒嬌；別人在成功的時候，我竟然去顧影自憐。我覺得我可真是夠欠的。說實話，我覺得高三並不痛苦，早起晚睡並不痛苦，每天寫作業刷題也並不痛苦，人們説高三是地獄，那恐怕祇有是心裡上的壓力在作祟。同樣地，我覺得複讀也並不可怕，難以忍受的是如何在已知註定高四的前提下度過第一年的高三。在現今情況下，我不能昂首挺胸做一些事情，我也不能放縱自己的情感和一些人深度交識，否則，也徒然是給半年後的自己增添痛苦。這是我最難以忍受的，如今的現狀。　　對啊！我他媽就算是…又怎麼樣！半年後，我不還是得眼睜睜的看著你们離開，我再背著書包跑到小縣城裡去，高四高四，光榮高四，分道揚鑣，後會無期！………是啊，這種感覺著實是令人窒息絕望，什麼叫無能為力，什麼叫望塵莫及，什麼叫自作自受，我現在全都明白了。　　今天高一高二元旦長跑，心裡一陣感嘆，一年了，物是人非。當时可曾躊躇滿志，現在也落得滿目蕭條。什麼元旦長跑，什麼聖誕節什麼賀卡什麼啊什麼，人生呐人生！我一個十七歲的毛頭小孩也能發出如此無奈的感嘆？！　　感嘆歸感嘆，前行，還是要前行。這幾天……再來一波宇宙超級無敵一練地獄審判，看它能把我給刺激到什麼樣。怕是次數多了我也該產生抗性突變了。　　高三，高三，屢戰屢敗，屢敗屢戰………若非如此，枉讀高三！ </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2017/12/19/%E4%B8%80%E7%B7%B4%E4%B9%8B%E5%89%8D/" title="一練之前">一練之前</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2017-12-19T15:10:00.000Z" title="發表於 2017-12-19 23:10:00">2017-12-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/">遙遠過往</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89/">高三</a></span></div><div class="content">　　2017年的尾聲。　　這一年對我而言意味著什麼？——具體說來，也怕是一言難盡。我只曉得它風風火火地到來，還沒有等到片刻駐足停留，就匆匆離去。短暫的光明一閃即逝，珍重之人來去匆匆。它唯獨為我捎帶來了一段段苦澀又難忘的經歷，除此之外什麼也沒有留下。2017年沒有心念已久的反殺巔峰，沒有等待四年激情澎湃的進擊熱潮，沒有腦海之中純粹充實的高三生活，固執堅守整年衹是換得鬱鬱寡歡的結局。我就是遊走在絕望与希望之界線的獨行者，徘徊在兩個極端的世界邊際，起起伏伏，動盪不定。　　但是時間不會停滯，無論世界如何發展和變化，無論眼中的一切被染上何種顏色，無論人事將會如何變遷，時間——這一永恆的存在都不會因此而停下進程。——就是在如此這般起伏動盪的時期中，我迎來了高三一練。　　但是，在一練之前，仍然還有重要的事情要訴說。　　2017年是代表著現實的一年，是童年至成年重要的過渡期。我不會因短暫的失意而迷失心向，人終究要成長，目見之處逐漸廣闊深刻，很多曾經認為想當然的事情的真實面目才會確真地顯露清楚。在真正離開故鄉之前，我會一直沉心靜氣，韜光養晦，靜待時機。　　時隔許久，昨天我去探訪奶奶。回家之後，我感到頭暈目眩。　　昨日仍舊嶄新的住宅樓已然略顯疲憊，左側拆遷的廢墟更增添了幾分狼狽。奶奶見到我後，竟然一時激動的落淚。她顫抖地抓著我的手，堆積已久的思念之苦波濤洶湧，使得她衹是抖動著嘴唇，卻良久難以說出一句話。——反常的是，我沒有幾分感動，只感受到了不明緣由的擔憂和恐懼。也許是他們對於人至暮年的無奈和空虛感令我的心難以放下！若是精神無所依託，那麼孤獨，消極，以至疾病便會大有可乘之機。如今他們的現狀，比及數年之前已經相差甚遠。我不知道家裡還有多少未曾告訴過我的事情，奶奶房間裡的……讓我感到如臨深淵。一直以來所以為的真實不是真正的真實，曾認為的永恆其實是稍縱即逝的煙火。時間的利刃已經向我現出鋒芒了。　　前些日子我感到自己徘徊在絕望的邊緣，瀕臨崩潰之際，想要伸手抓得救命稻草卻發覺四周空蕩蕩的世界中竟無一物。每次考試結束後我放下水筆， 木然地起身離開，頭腦中只剩一片眩暈。走出考場後的視野中是萬物垮塌，頭頂無數鋼筋水泥徑直沉重地砸下來，伴隨著響徹腦海的轟隆噪聲。我感到自己只剩下一層不堪一擊的軀殼，仿佛隨時都可能碎裂消失——除此之外殘留的是一片虛無。但是，我又必須拖著這個疲憊不堪的軀殼繼續撐完最後的“地獄審判”，方才能換得一絲休息的空間。更加令我難以忍受的是，這樣漫無天日的無邊循環仿佛永遠也沒有盡頭。這也就意味著，我即便是熬過了痛苦不堪的審判日，在不久的將來這個絕望的情境還會捲土重來。恐怕當這樣的日子最終結束的時候，我也不會得到真正精神上的救贖。——沒有意義。我如是想著，這一切都沒有意義，不過是沒完沒了的死衚衕，我費勁全身力氣在其中求索穿行，也永遠不會找到出路。——於是，萎靡的精神先一步宣告了它的崩潰——高三的上半學期就是在如此痛苦的壓力下度過了全程。　　但是，痛苦卻又出自於自己的選擇。我大可選擇不讓自己繼續痛苦而逃離到別處，卻又被某種力量驅使著走回原路。我分明是清醒的，有意識的主動選擇更加困難的生活，那麼一切的發生也都可以理解和承受了。現在的我是無悔的，待到最後的時刻也仍然會是無悔的。現在我可以清楚的告訴自己，未來的路程將會愈發順暢，前些日子的痛苦車輪戰也必將告一段落了。“考上985，走上人生巔峰”——這是我兩年多前剛來到這裡時內心的打算，于現在來說，這個打算大體上沒有什麼變化，但總歸還是更加顯明了——“考上985，到那裡探尋自己真正的生命所屬，博得能夠獨立生存的物質基礎後，到遠離喧囂的安靜地域度過一生。”　　“來到這裡之前我每天都在想，為什麼會變成這樣…心靈和身體都受創，還完全失去自由，連自我都喪失了…早知道會淪落到這種下場，應該不會有人想上戰場吧。但是「某種東西」在背後推著大家前進，讓我們一腳踏進了地獄。而那個「某種東西」，不是自己的意志，而是被他人和環境所迫，身不由己啊。祇不過，自己主動踏進去的傢夥所看到的地獄又不太一樣。在那個地獄會看到什麼，有可能是希望，也可能是更悲慘的地獄。那個沒人說得準，祇有不斷前進的人…才會知道。”　　——每當迷失的時候，艾倫的這番話通常都會鼓舞我。我也必須繼續前進下去，不會有片刻的停留。縱使未來仍舊是一團模糊的煙塵，但若是駐足於此，無邊的迷茫更會將我盡數吞沒。而唯有前進，才會在漫漫長路中體驗到生命的意義。現在我將回到現實中去，眼前的黨務之要是一練。一練，要穩穩地拿下。我有必須繼續的理由，要將這場抗爭繼續到底。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2017/11/29/%E7%AC%ACN%E6%AC%A1%E5%BE%9E%E9%9B%B6/" title="第N次從零">第N次從零</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">發表於</span><time datetime="2017-11-29T15:29:00.000Z" title="發表於 2017-11-29 23:29:00">2017-11-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/">遙遠過往</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89/">高三</a></span></div><div class="content">　　9月5日～11月29日，從天一大聯考到現在已經度過了將近三個月的時間。我和陳俊平，曹振謙綁定同桌連坐三月，在教室最後一排享受著門口涼風的酸爽洗禮。至此与班級幾乎隔絕，身處于偏僻卻也安靜的小天地里聽課刷題。雖是些許憋屈，不過總歸感謝曹振謙和任炳坤兩個有趣的傢夥，《Q与mer説》總是讓我笑得喘不過氣來。陳俊平是我在14班里最喜歡的女生，馬嘉鑫不拘小節的爽朗性格也依然很可愛。總而言之，蝸居于最後一排的三個月生活並沒有想像中那麼糟糕。　　經歷了失敗的天一大聯考後，期中考試和大象天成大聯考的成績也仍舊差強人意。不過終歸是換了座位，也意味著新生活即將揭開序幕了。 </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/6/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/#content-inner">6</a><span class="page-number current">7</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://s3.bmp.ovh/imgs/2025/03/18/b0451d4701662353.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林凡</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">65</div></a><a href="/tags/"><div class="headline">標籤</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/LINFAN190330" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:kokuurasen@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2019/06/24/%E4%B8%96%E7%95%8C%E8%87%A8%E7%94%9F/" title="世界臨生">世界臨生</a><time datetime="2019-06-24T14:47:00.000Z" title="發表於 2019-06-24 22:47:00">2019-06-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2019/06/23/%E8%8B%A6%E9%9B%A3%E7%9A%84%E6%84%8F%E7%BE%A9/" title="苦難的意義">苦難的意義</a><time datetime="2019-06-22T16:40:00.000Z" title="發表於 2019-06-23 00:40:00">2019-06-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2019/06/22/%E6%89%AD%E6%9B%B2%E7%9A%84%E5%9B%9A%E7%B1%A0/" title="扭曲的囚籠">扭曲的囚籠</a><time datetime="2019-06-22T10:47:00.000Z" title="發表於 2019-06-22 18:47:00">2019-06-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2019/06/16/%E9%A1%98%E6%9C%9B/" title="願望">願望</a><time datetime="2019-06-15T16:52:00.000Z" title="發表於 2019-06-16 00:52:00">2019-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2019/06/09/%E8%BA%91%E8%BA%85%E8%88%87%E5%B8%8C%E5%86%80/" title="躑躅與希冀">躑躅與希冀</a><time datetime="2019-06-09T07:19:00.000Z" title="發表於 2019-06-09 15:19:00">2019-06-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分類</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/"><span class="card-category-list-name">遙遠過往</span><span class="card-category-list-count">65</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89/"><span class="card-category-list-name">高三</span><span class="card-category-list-count">39</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%81%99%E9%81%A0%E9%81%8E%E5%BE%80/%E9%AB%98%E4%B8%89%C2%B7%E4%BA%8C%E5%91%A8%E7%9B%AE/"><span class="card-category-list-name">高三·二周目</span><span class="card-category-list-count">26</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>歸檔</span>
+      <a class="card-more-btn" href="/archives/"
+            title="檢視更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2019/06/">
+            <span class="card-archive-list-date">
+              六月 2019
+            </span>
+            <span class="card-archive-list-count">6</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2019/05/">
+            <span class="card-archive-list-date">
+              五月 2019
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2019/04/">
+            <span class="card-archive-list-date">
+              四月 2019
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2019/03/">
+            <span class="card-archive-list-date">
+              三月 2019
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2019/02/">
+            <span class="card-archive-list-date">
+              二月 2019
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2018/12/">
+            <span class="card-archive-list-date">
+              十二月 2018
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2018/11/">
+            <span class="card-archive-list-date">
+              十一月 2018
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2018/10/">
+            <span class="card-archive-list-date">
+              十月 2018
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>網站資訊</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章數量 :</div><div class="item-count">65</div></div><div class="webinfo-item"><div class="item-name">訪客數 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">總瀏覽量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最後更新時間 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-03-20T07:07:49.861Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://s3.bmp.ovh/imgs/2025/03/18/34c50011ed4cd2f8.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林凡</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日夜模式切換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到頂端"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["ヴォイド・グラデーション"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["ヴォイド・グラデーション"])
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
