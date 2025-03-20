@@ -30,11 +30,6 @@
   border-top-right-radius: inherit;
   background-position: center center;
   background-size: cover;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
 }
 @media screen and (max-width: 768px) {
   .top-img {
